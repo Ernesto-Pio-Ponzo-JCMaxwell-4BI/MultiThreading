@@ -80,6 +80,11 @@ class TicTacToe implements Runnable {
     // se facessimo un overloading invece di un override il copilatore ci segnalerebbe l'errore
     // per approfondimenti http://lancill.blogspot.it/2012/11/annotations-override.html
     public void run() {
+          Random random = new Random();
+        int j = 100;
+        int n = 300-j;
+        int k = random.nextInt(n)+j;//Valori compresi tra 3 e 10
+
         for (int i = 10; i > 0; i--) {
             msg = "<" + t + "> ";
             //System.out.print(msg);
