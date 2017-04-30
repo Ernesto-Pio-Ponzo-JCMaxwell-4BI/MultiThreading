@@ -31,6 +31,7 @@ int punteggio=0;
         
         // Posso creare un 2ndo THREAD e farlo iniziare qualche tempo dopo...
         Thread tac = new Thread(new TicTac("TAC"));
+        Thread toe = new Thread(new TicTacToe("TOE"));
         
         try {
             TimeUnit.MILLISECONDS.sleep(1111);
