@@ -44,7 +44,11 @@ int punteggio=0;
         try {
             tac.join();
         } catch (InterruptedException e) {}
-        tac.interrupt(); // stop 2nd THREAD
+        
+        try{
+            toe.join();
+        }catch(InterruptedException e){System.out.println(e);}
+
 
         
         long end = System.currentTimeMillis();
