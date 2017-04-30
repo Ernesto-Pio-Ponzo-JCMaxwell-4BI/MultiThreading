@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
  * @author Matteo Palitto
  */
 public class MultiThread {
-int punteggio=0;
+int punteggio=1;
     /**
      * @param args the command line arguments
      */
