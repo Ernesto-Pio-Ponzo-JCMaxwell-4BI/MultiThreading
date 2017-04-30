@@ -65,8 +65,9 @@ int punteggio=0;
 // +1 si possono passare parametri (usando il Costruttore)
 // +1 si puo' controllare quando un THREAD inizia indipendentemente da quando e' stato creato
 class TicTacToe implements Runnable {
-    
-    // non essesndo "static" c'e' una copia delle seguenti variabili per ogni THREAD 
+    public static int Punteggio = 0;
+    public static String ThreadPrecedente = "   ";
+    // non essesndo "static" c'e' una copia delle seguenti 
     private String t;
     private String msg;
 
