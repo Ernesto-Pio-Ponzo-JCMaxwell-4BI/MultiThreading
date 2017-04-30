@@ -27,12 +27,15 @@ int punteggio=0;
         
         // Posso creare un THREAD e avviarlo immediatamente
         Thread tic = new Thread (new TicTac("TIC"));
-        tic.start();
+        
         
         // Posso creare un 2ndo THREAD e farlo iniziare qualche tempo dopo...
         Thread tac = new Thread(new TicTac("TAC"));
         Thread toe = new Thread(new TicTacToe("TOE"));
-        
+        tic.start();
+        tac.start();
+        toe.start();
+
         try {
             TimeUnit.MILLISECONDS.sleep(1111);
             tac.start();  // avvio del secondo THREAD
