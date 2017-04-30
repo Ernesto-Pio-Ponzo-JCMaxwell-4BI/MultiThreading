@@ -37,8 +37,8 @@ int punteggio=0;
         toe.start();
 
         try {
-            TimeUnit.MILLISECONDS.sleep(1111);
-            tac.start();  // avvio del secondo THREAD
+         tic.join();
+
         } catch (InterruptedException e) {}
         
         try {
