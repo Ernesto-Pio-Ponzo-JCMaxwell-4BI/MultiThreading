@@ -54,7 +54,7 @@ int punteggio=0;
         long end = System.currentTimeMillis();
         System.out.println("Main Thread completata! tempo di esecuzione: " + (end - start) + "ms");
         
-        System.out.println("Toe viene dopo Tac per: " + TicTacToe.Punteggio + " volte;");
+        System.out.println("Toe viene dopo Tac : " + TicTacToe.Punteggio + " volte;");
 
     }
     
