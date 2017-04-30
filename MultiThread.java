@@ -67,12 +67,12 @@ int punteggio=0;
 class TicTacToe implements Runnable {
     public static int Punteggio = 0;
     public static String ThreadPrecedente = "   ";
-    // non essesndo "static" c'e' una copia delle seguenti 
+    // non essesndo "static" c'e' una copia delle seguenti variabili per ogni THREAD
     private String t;
     private String msg;
 
     // Costruttore, possiamo usare il costruttore per passare dei parametri al THREAD
-    public TicTac (String s) {
+    public TicTacToe (String s) {
         this.t = s;
     }
     
