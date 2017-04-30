@@ -42,7 +42,7 @@ int punteggio=0;
         } catch (InterruptedException e) {}
         
         try {
-            TimeUnit.MILLISECONDS.sleep(1234);
+            tac.join();
         } catch (InterruptedException e) {}
         tac.interrupt(); // stop 2nd THREAD
 
