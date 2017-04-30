@@ -8,7 +8,7 @@
  * 6. posso passare parametri al THREADs tramite il costruttore della classe Runnable
  */
 package multithread;
-
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 /**
  *
