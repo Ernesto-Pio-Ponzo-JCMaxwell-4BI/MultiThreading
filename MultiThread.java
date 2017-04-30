@@ -97,6 +97,14 @@ class TicTacToe implements Runnable {
             }
             msg += t + ": " + i;
             System.out.println(msg);
+            System.out.println("debug: " + t + "    " + ThreadPrecedente);
+            
+            if(ThreadPrecedente.equals("TAC") && t.equals("TOE")){
+                Punteggio++; 
+               System.out.println(Punteggio);
+            }
+            ThreadPrecedente = t;
+
          
         }
     }
