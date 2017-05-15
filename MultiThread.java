@@ -45,6 +45,7 @@ public class MultiThread {
         
         long end = System.currentTimeMillis();
         System.out.println("Main Thread completata! tempo di esecuzione: " + (end - start) + "ms");
+
     }
     
 }
