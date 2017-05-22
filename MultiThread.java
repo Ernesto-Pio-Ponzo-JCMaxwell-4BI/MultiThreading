@@ -65,6 +65,33 @@ class TicTac implements Runnable {
         this.t = s;
     }
     
+    // Classe per l'oggetto MONITOR
+class Schermi {
+
+  String ultimoTHREAD = ""; // ultimo thread che ha scritto sullo schermo
+  int punteggio = 0;        // anche punteggio viene condiviso dai threads
+
+  public int punteggio() {  // fornisce il punteggio
+    return this.punteggio;
+  }
+
+  public synchronized void scrivi(String thread, String msg) {
+    int casuale=100+(int)(Math.random()*300); //numero casuale tra 100 e 300
+    // msg += ": " + casuale + " :";
+
+    if( thread.equals("TOE") && ultimoTHREAD.equals("TAC")) {
+        punteggio++;
+        msg += "  <----------------";
+    }
+
+    try {
+        TimeUnit.MILLISECONDS.sleep(casuale); //casuale ora diventa un numero rappresentante il tempo il MILLISECONDI
+    } catch (InterruptedException e) {} //Richiamo eccezione    this.ultimoTHREAD = thread;
+
+    System.out.println(msg);
+    ultimoTHREAD = thread;
+  }
+}
     @Override // Annotazione per il compilatore
     // se facessimo un overloading invece di un override il copilatore ci segnalerebbe l'errore
     // per approfondimenti http://lancill.blogspot.it/2012/11/annotations-override.html
