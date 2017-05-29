@@ -20,11 +20,11 @@ public class MultiThread {
         
         Monitor moniT = new Monitor(); //monitor per controllare l'accesso alle risorse condivise
         
-        Thread tic = new Thread (new TicTacToe("TIC", moniT));   // Creazo il primo threads
+        Thread tic = new Thread (new TicTacToe("TIC", moniT));   // Creo il primo threads
         
-        Thread tac = new Thread(new TicTacToe("TAC", moniT)); // Creazo il secondo threads
+        Thread tac = new Thread(new TicTacToe("TAC", moniT)); // Creo il secondo threads
         
-        Thread toe = new Thread(new TicTacToe("TOE", moniT)); // Creazo il terzo threads
+        Thread toe = new Thread(new TicTacToe("TOE", moniT)); // Creo il terzo threads
         
         toe.start(); // avvio 1 thread 
         
